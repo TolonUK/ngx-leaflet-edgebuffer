@@ -40,8 +40,8 @@ import 'leaflet';
 import 'leaflet/dist/leaflet.css';
 
 import 'leaflet-edgebuffer';
-import 'ngx-leaflet-edgebuffer';
 
+import '@asymmetrik/ngx-leaflet';
 
 // Other Dependencies
 import 'rxjs';
