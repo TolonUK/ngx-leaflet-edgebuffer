@@ -94,7 +94,7 @@ gulp.task('rollup-js', () => {
 			external: [
 				'@angular/core',
 				'leaflet',
-				'@asymmetrik/leaflet-filter',
+				'leaflet-edgebuffer',
 				'@asymmetrik/ngx-leaflet'
 			],
 			onwarn: (warning) => {

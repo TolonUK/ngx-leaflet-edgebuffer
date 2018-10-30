@@ -2,13 +2,13 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import { LeafletFilterDemoModule } from './leaflet-filter/leaflet-filter-demo.module';
+import { LeafletEdgeBufferDemoModule } from './leaflet-edgebuffer/leaflet-edgebuffer-demo.module';
 
 
 @NgModule({
 	imports: [
 		BrowserModule,
-		LeafletFilterDemoModule
+		LeafletEdgeBufferDemoModule
 	],
 	declarations: [
 		AppComponent

@@ -3,10 +3,10 @@ import { Component } from '@angular/core';
 import * as L from 'leaflet';
 
 @Component({
-	selector: 'leafletFilterCoreDemo',
+	selector: 'leafletEdgeBufferCoreDemo',
 	templateUrl: './core-demo.component.html'
 })
-export class LeafletFilterCoreDemoComponent {
+export class LeafletEdgeBufferCoreDemoComponent {
 
 	options = {
 		layers: [

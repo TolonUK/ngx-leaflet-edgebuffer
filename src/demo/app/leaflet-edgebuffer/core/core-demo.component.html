@@ -6,11 +6,9 @@
 		<div class="col-sm-12">
 
 			<div leaflet style="height: 400px;"
-			     leafletFilter
+			     leafletEdgeBuffer
 			     [leafletOptions]="options"
-			     [leafletFilterOptions]="filterOptions"
-			     [(leafletFilterState)]="filterState"
-			     (leafletFilterStateChange)="eventHandler('filterChanged', $event)">
+			     [leafletEdgeBufferOptions]="edgeBufferOptions">
 			</div>
 
 		</div>
@@ -18,7 +16,3 @@
 	</div>
 
 </div>
-
-
-
-

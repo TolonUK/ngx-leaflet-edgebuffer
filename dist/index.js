@@ -1,2 +1,2 @@
-export { LeafletFilterModule } from './leaflet-filter/leaflet-filter.module';
+export { LeafletEdgeBufferModule } from './leaflet-edgebuffer/leaflet-edgebuffer.module';
 //# sourceMappingURL=index.js.map

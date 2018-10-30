@@ -3,10 +3,10 @@ import { Component } from '@angular/core';
 import * as L from 'leaflet';
 
 @Component({
-	selector: 'leafletFilterProgrammaticDemo',
+	selector: 'leafletEdgeBufferProgrammaticDemo',
 	templateUrl: './programmatic-demo.component.html'
 })
-export class LeafletFilterProgrammaticDemoComponent {
+export class LeafletEdgeBufferProgrammaticDemoComponent {
 
 	center = [ 44.352581, -68.225104 ];
 

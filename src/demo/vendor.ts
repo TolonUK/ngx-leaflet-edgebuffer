@@ -39,12 +39,8 @@ import '@angular/platform-browser-dynamic';
 import 'leaflet';
 import 'leaflet/dist/leaflet.css';
 
-import 'leaflet-draw';
-import 'leaflet-draw/dist/leaflet.draw.css';
-import '@asymmetrik/leaflet-filter';
-import '@asymmetrik/leaflet-filter/dist/leaflet-filter.css';
-
-import '@asymmetrik/ngx-leaflet';
+import 'leaflet-edgebuffer';
+import 'ngx-leaflet-edgebuffer';
 
 
 // Other Dependencies

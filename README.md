@@ -1,4 +1,4 @@
-# @asymmetrik/ngx-leaflet-filter
+# ngx-leaflet-edgebuffer
 
 [![Build Status][travis-image]][travis-url]
 

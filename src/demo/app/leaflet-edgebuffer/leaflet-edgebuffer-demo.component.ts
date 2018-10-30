@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
 
 @Component({
-	selector: 'leafletFilterDemo',
+	selector: 'leafletEdgeBufferDemo',
 	templateUrl: './leaflet-filter-demo.component.html'
 })
-export class LeafletFilterDemoComponent {
+export class LeafletEdgeBufferDemoComponent {
 	showDemo = false;
 
 	ngOnInit() {
