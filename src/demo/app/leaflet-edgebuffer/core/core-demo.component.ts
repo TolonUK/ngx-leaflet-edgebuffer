@@ -18,13 +18,8 @@ export class LeafletEdgeBufferCoreDemoComponent {
 
 	featureGroup = L.featureGroup();
 
-	filterOptions = {
-		position: 'topright',
-		filter: {
-			circle: {},
-			rectangle: {},
-			polygon: {}
-		}
+	edgeBufferOptions = {
+		edgeBufferTiles: 1
 	};
 
 	filterState: any;

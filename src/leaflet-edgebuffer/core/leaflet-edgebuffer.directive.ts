@@ -1,10 +1,10 @@
-import { Directive, OnInit } from '@angular/core';
+import { Directive, Input, OnInit } from '@angular/core';
 
 // import * as L from 'leaflet';
 import 'leaflet-edgebuffer';
+import {LeafletEdgeBufferOptions} from './leaflet-edgebuffer.options';
 
 import { LeafletDirective, LeafletDirectiveWrapper } from '@asymmetrik/ngx-leaflet';
-
 
 @Directive({
 	selector: '[leafletEdgeBuffer]'
@@ -19,7 +19,7 @@ export class LeafletEdgeBufferDirective
 	// featureGroup: L.FeatureGroup;
 
 	// Constructor options for Filter Control
-	// @Input('leafletEdgeBufferOptions') filterOptions: L.Control.FilterControlOptions = null;
+	@Input('leafletEdgeBufferOptions') edgeBufferOptions: LeafletEdgeBufferOptions = null;
 
 	// Filter state
 	// @Input('leafletEdgeBufferState') filterState: any;

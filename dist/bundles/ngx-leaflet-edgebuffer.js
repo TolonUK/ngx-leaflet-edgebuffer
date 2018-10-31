@@ -7,11 +7,6 @@
 
 // import * as L from 'leaflet';
 var LeafletEdgeBufferDirective = /** @class */ (function () {
-    // Filter Control
-    // filterControl: L.Control.FilterControl;
-    // featureGroup: L.FeatureGroup;
-    // Constructor options for Filter Control
-    // @Input('leafletEdgeBufferOptions') filterOptions: L.Control.FilterControlOptions = null;
     // Filter state
     // @Input('leafletEdgeBufferState') filterState: any;
     // Event Emitter for filter state change events
@@ -19,6 +14,11 @@ var LeafletEdgeBufferDirective = /** @class */ (function () {
     // Event for when the filter control is created and ready
     // @Output('leafletEdgeBufferControlReady') controlReady = new EventEmitter<L.Control.FilterControl>();
     function LeafletEdgeBufferDirective(leafletDirective) {
+        // Filter Control
+        // filterControl: L.Control.FilterControl;
+        // featureGroup: L.FeatureGroup;
+        // Constructor options for Filter Control
+        this.edgeBufferOptions = null;
         this.leafletDirective = new ngxLeaflet.LeafletDirectiveWrapper(leafletDirective);
     }
     LeafletEdgeBufferDirective.prototype.ngOnInit = function () {
@@ -71,6 +71,9 @@ var LeafletEdgeBufferDirective = /** @class */ (function () {
     LeafletEdgeBufferDirective.ctorParameters = function () { return [
         { type: ngxLeaflet.LeafletDirective, },
     ]; };
+    LeafletEdgeBufferDirective.propDecorators = {
+        'edgeBufferOptions': [{ type: core.Input, args: ['leafletEdgeBufferOptions',] },],
+    };
     return LeafletEdgeBufferDirective;
 }());
 
