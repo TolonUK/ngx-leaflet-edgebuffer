@@ -55,7 +55,13 @@ Example:
 ```js
 	options = {
 		layers: [
-			L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { maxZoom: 18, attribution: 'Open Street Map', edgeBufferTiles: 1 })
+			L.tileLayer(
+				'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+					maxZoom: 18,
+					attribution: 'Open Street Map',
+					edgeBufferTiles: 1
+				}
+			)
 		],
 		zoom: 13,
 		center: L.latLng({lat: 55.43, lng: -4.636})
@@ -66,5 +72,5 @@ Example:
 See LICENSE in repository for details.
 
 ## Credits
-**[Leaflet](http://leafletjs.com/)** Is an awesome mapping package.
-**[Angular 2 Leaflet component](https://github.com/Asymmetrik/ngx-leaflet)
+* [Leaflet](http://leafletjs.com/) Is an awesome mapping package
+* [Angular 2+ Leaflet component](https://github.com/Asymmetrik/ngx-leaflet) by Asymmetrik
