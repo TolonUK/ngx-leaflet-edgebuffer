@@ -7,26 +7,16 @@ import * as L from 'leaflet';
 	templateUrl: './core-demo.component.html'
 })
 export class LeafletEdgeBufferCoreDemoComponent {
-
 	options = {
 		layers: [
-			L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { maxZoom: 18, attribution: 'Open Street Map' })
+			L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { maxZoom: 18, attribution: 'Open Street Map', edgeBufferTiles: 1 })
 		],
-		zoom: 5,
-		center: L.latLng({ lat: 46.879966, lng: -121.726909 })
+		zoom: 13,
+		center: L.latLng({lat: 55.43, lng: -4.636})
 	};
-
-	featureGroup = L.featureGroup();
-
-	edgeBufferOptions = {
-		edgeBufferTiles: 1
-	};
-
-	filterState: any;
 
 	eventHandler = (msg: string, event: any) => {
 		// tslint:disable-next-line:no-console
 		console.log({ msg, event });
 	}
-
 }

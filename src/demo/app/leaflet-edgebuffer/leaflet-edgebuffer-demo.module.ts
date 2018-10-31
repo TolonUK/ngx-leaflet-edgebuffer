@@ -8,7 +8,7 @@ import { LeafletEdgeBufferModule } from '../../../leaflet-edgebuffer/leaflet-edg
 
 import { LeafletEdgeBufferDemoComponent } from './leaflet-edgebuffer-demo.component';
 import { LeafletEdgeBufferCoreDemoComponent } from './core/core-demo.component';
-import { LeafletEdgeBufferProgrammaticDemoComponent } from './programmatic/programmatic-demo.component';
+import { LeafletNoEdgeBufferDemoComponent } from './no-edgebuffer/no-edgebuffer-demo.component';
 
 
 @NgModule({
@@ -22,7 +22,7 @@ import { LeafletEdgeBufferProgrammaticDemoComponent } from './programmatic/progr
 	declarations: [
 		LeafletEdgeBufferDemoComponent,
 		LeafletEdgeBufferCoreDemoComponent,
-		LeafletEdgeBufferProgrammaticDemoComponent
+		LeafletNoEdgeBufferDemoComponent
 	],
 	exports: [
 		LeafletEdgeBufferDemoComponent
